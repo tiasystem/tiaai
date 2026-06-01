@@ -88,7 +88,7 @@ export default function CustomerBehaviorSection({ theme, dark, d }) {
               { label: "Longest", val: formatDuration(d.behavior.longestSession) },
               { label: "Shortest", val: formatDuration(d.behavior.shortestSession) },
             ].map((s, i) => (
-              <div key={i} className={`rounded-lg p-3 ${dark ? "bg-zinc-800" : "bg-zinc-100"}`}>
+              <div key={i} className="rounded-lg p-3">
                 <p className={`text-xs ${subText} mb-1`}>{s.label}</p>
                 <p className="text-sm font-semibold text-emerald-400">{s.val}</p>
               </div>
@@ -114,7 +114,7 @@ export default function CustomerBehaviorSection({ theme, dark, d }) {
           <p className={`text-xs uppercase tracking-widest font-medium mb-4 ${subText}`}>Most Clicked Links</p>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
             {d.behavior.topClickedLinks.map((link, i) => (
-              <div key={i} className={`rounded-lg p-3 text-center ${dark ? "bg-zinc-800" : "bg-zinc-100"}`}>
+              <div key={i} className="rounded-lg p-3 text-center">
                 <p className="text-lg font-light text-emerald-400">{link.count}</p>
                 <p className={`text-xs ${subText} truncate mt-1`}>{link.url}</p>
               </div>
