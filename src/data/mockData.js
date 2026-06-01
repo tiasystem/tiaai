@@ -27,10 +27,10 @@ export const MOCK = {
       { hour: "18:00", count: 87 }, { hour: "19:00", count: 43 },
     ],
     topWords: [
-      { word: "hinta", count: 312 }, { word: "palvelu", count: 287 },
-      { word: "tilaus", count: 198 }, { word: "tuote", count: 176 },
-      { word: "yhteystieto", count: 143 }, { word: "aika", count: 121 },
-      { word: "toimitus", count: 98 }, { word: "takuu", count: 87 },
+      { word: "price", count: 312 }, { word: "service", count: 287 },
+      { word: "order", count: 198 }, { word: "product", count: 176 },
+      { word: "contact", count: 143 }, { word: "time", count: 121 },
+      { word: "delivery", count: 98 }, { word: "warranty", count: 87 },
     ],
     topClickedLinks: [
       { url: "/pricing", count: 312 }, { url: "/services", count: 241 },
@@ -76,11 +76,11 @@ export const MOCK = {
     ],
     reAskRate: { percentage: 12.3, count: 227, trend: [8.1, 9.4, 11.2, 10.8, 12.3] },
     escalations: [
-      { id: "1", snippet: "Tarvitsen kiireesti tarjouksen...", reason: "urgent + quote request", timestamp: "2026-06-14 16:42" },
-      { id: "2", snippet: "Haluaisin puhua ihmiselle asiasta", reason: "human agent request", timestamp: "2026-06-13 11:18" },
-      { id: "3", snippet: "Tilaukseni on myöhässä jo viikon", reason: "complaint", timestamp: "2026-06-12 09:34" },
-      { id: "4", snippet: "Voitteko soittaa minulle takaisin?", reason: "callback request", timestamp: "2026-06-11 14:07" },
-      { id: "5", snippet: "Tarvitsen yhteystiedot johdolle", reason: "contact request", timestamp: "2026-06-10 10:22" },
+      { id: "1", snippet: "I need a quote urgently...", reason: "urgent + quote request", timestamp: "2026-06-14 16:42" },
+      { id: "2", snippet: "I'd like to speak with a person about this", reason: "human agent request", timestamp: "2026-06-13 11:18" },
+      { id: "3", snippet: "My order has been delayed for a week", reason: "complaint", timestamp: "2026-06-12 09:34" },
+      { id: "4", snippet: "Can you call me back?", reason: "callback request", timestamp: "2026-06-11 14:07" },
+      { id: "5", snippet: "I need the contact details for management", reason: "contact request", timestamp: "2026-06-10 10:22" },
     ],
     avgConfidence: 84,
     confidenceTrend: [
@@ -109,7 +109,7 @@ export const MOCK = {
       })
     ),
   },
-  insights: `Kesäkuussa 2026 TIA AI käsitteli yhteensä 1 847 keskustelua, mikä edustaa 18 prosentin kasvua edelliseen kuukauteen verrattuna. Liidien generointi kasvoi merkittävästi 22 prosenttia, tuottaen 284 kvalifioitua liidiä myyntitiimille. Vilkkain liikenneaika oli 16:00–17:00, jolloin käsiteltiin keskimäärin 241 keskustelua tunnissa. Hinnoitteluun liittyvät kysymykset olivat yleisin aihe 487 keskustelulla, mikä kertoo asiakkaiden korkeasta ostoaikeesta. Tekoälyn luottamuspistemäärä pysyi vahvana 84 prosentissa, ja vastausaika parani 8 prosenttia kuukauden aikana.`,
+  insights: `In June 2026, TIA AI handled a total of 1,847 conversations, representing 18% growth compared to the previous month. Lead generation increased significantly by 22%, producing 284 qualified leads for the sales team. Peak traffic was between 16:00–17:00, with an average of 241 conversations per hour. Pricing-related questions were the most common topic with 487 conversations, indicating high purchase intent among visitors. The AI confidence score remained strong at 84%, and response time improved by 8% during the month.`,
 };
 
 // ─── CHAT THEMES ──────────────────────────────────────────────────────────────
